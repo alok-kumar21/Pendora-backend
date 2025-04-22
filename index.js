@@ -164,45 +164,34 @@ app.get("/api/categories/:categoryId", async (req, res) => {
   }
 });
 
-// get all cart Item
-
-app.get("/api/cart", async (req, res) => {
-  try {
-    const cartItems = await Cart.find().populate("productId");
-    res.json(cartItems);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-});
-
 // add item to cart
 
-async function addItemCart(cartId) {
-  try {
-    const cartItem = Products.findById(cartId);
+// async function addItemCart(cartId) {
+//   try {
+//     const cartItem = Products.findById(cartId);
 
-    const savingProduct = Cart(cartItem);
+//     const savingProduct = Cart(cartItem);
 
-    const savedItem = await savingProduct.save();
-    return savedItem;
-  } catch (error) {
-    console.log("Error:", error);
-  }
-}
+//     const savedItem = await savingProduct.save();
+//     return savedItem;
+//   } catch (error) {
+//     console.log("Error:", error);
+//   }
+// }
 
-app.post("/api/cart", async (req, res) => {
-  try {
-    const { item } = addItemCart(req.body);
-    Cart.push(item);
-    res.json(Cart);
+// app.post("/api/cart", async (req, res) => {
+//   try {
+//     const { item } = addItemCart(req.body);
+//     Cart.push(item);
+//     res.json(Cart);
 
-    if (item) {
-      res.status(200).json({ message: "Product save Successfully" });
-    }
-  } catch (error) {
-    console.log("Error", error);
-  }
-});
+//     if (item) {
+//       res.status(200).json({ message: "Product save Successfully" });
+//     }
+//   } catch (error) {
+//     console.log("Error", error);
+//   }
+// });
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
