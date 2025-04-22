@@ -2,7 +2,6 @@ const { inilizeData } = require("./db/db.connect");
 inilizeData();
 const Products = require("./models/products.models");
 const Categories = require("./models/category.models");
-const Cart = require("./models/cart.models");
 
 const cors = require("cors");
 const express = require("express");
@@ -45,7 +44,7 @@ app.post("/products", async (req, res) => {
 // show all Product
 async function showAllProducts() {
   try {
-    const Product = await Products.find().populate("category");
+    const Product = await Products.find();
     return Product;
   } catch (error) {
     console.log("error:", error);
@@ -69,7 +68,7 @@ app.get("/api/products", async (req, res) => {
 
 async function showProductsById(productId) {
   try {
-    const product = await Products.findById(productId).populate("category");
+    const product = await Products.findById(productId);
     return product;
   } catch (error) {
     console.log("Error:", error);
