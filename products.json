@@ -1,0 +1,202 @@
+[
+    {
+      "name": "SoundMax Pro X1",
+      "description": ["Premium over-ear headphones with adaptive noise cancellation."],
+      "brand": "SoundMax",
+      "price": 99,
+      "currency": "INR",
+      "in_Stock": false,
+      "rating": 4.5,
+      "images": ["https://png.pngtree.com/png-clipart/20241117/original/pngtree-a-yellow-mens-jacket-illustration-png-image_17119918.png"],
+      "features": ["Bluetooth 5.3", "Adaptive Noise Cancellation", "35-hour battery", "Touch Controls"],
+      "dimensions": {
+        "width": "7.8 in",
+        "height": "8.7 in",
+        "depth": "3.3 in",
+        "weight": "270g"
+      },
+      "warranty": "2 years",
+      "free_Shipping": true,
+      "category": "67fa003c15f3a5c7c1c6e3b8"
+    },
+    {
+      "name": "SoundMax Lite S2",
+      "description": ["Lightweight on-ear headphones with bass boost."],
+      "brand": "SoundMax",
+      "price": 75,
+      "currency": "INR",
+      "in_Stock": true,
+      "rating": 3.8,
+      "images": ["https://png.pngtree.com/png-clipart/20241117/original/pngtree-a-yellow-mens-jacket-illustration-png-image_17119918.png"],
+      "features": ["Bluetooth 5.0", "Bass Boost", "20-hour battery", "Foldable Design"],
+      "dimensions": {
+        "width": "6.5 in",
+        "height": "7.0 in",
+        "depth": "2.8 in",
+        "weight": "180g"
+      },
+      "warranty": "1 year",
+      "free_Shipping": false,
+      "category": "67fa003c15f3a5c7c1c6e3b8"
+    },
+    {
+      "name": "SoundMax Ultra NC",
+      "description": ["Hybrid noise cancellation with dual mic ENC technology."],
+      "brand": "SoundMax",
+      "price": 110,
+      "currency": "INR",
+      "in_Stock": true,
+      "rating": 4.7,
+      "images": ["https://png.pngtree.com/png-clipart/20241117/original/pngtree-a-yellow-mens-jacket-illustration-png-image_17119918.png"],
+      "features": ["Bluetooth 5.2", "Hybrid Noise Cancellation", "40-hour battery", "IPX4 Water Resistant"],
+      "dimensions": {
+        "width": "8.0 in",
+        "height": "9.0 in",
+        "depth": "3.5 in",
+        "weight": "290g"
+      },
+      "warranty": "2 years",
+      "free_Shipping": true,
+      "category": "67fa003c15f3a5c7c1c6e3b8"
+    },
+    {
+      "name": "SoundMax Sport M3",
+      "description": ["Sweat-resistant headphones with secure-fit ear hooks."],
+      "brand": "SoundMax",
+      "price": 85,
+      "currency": "INR",
+      "in_Stock": true,
+      "rating": 4.2,
+      "images": ["https://png.pngtree.com/png-clipart/20241117/original/pngtree-a-yellow-mens-jacket-illustration-png-image_17119918.png"],
+      "features": ["Bluetooth 5.1", "IPX5 Rating", "25-hour battery", "Ear Hooks"],
+      "dimensions": {
+        "width": "5.5 in",
+        "height": "6.2 in",
+        "depth": "2.5 in",
+        "weight": "150g"
+      },
+      "warranty": "1 year",
+      "free_Shipping": true,
+      "category": "67fa003c15f3a5c7c1c6e3b8"
+    },
+    {
+      "name": "SoundMax Studio Pro",
+      "description": ["Studio-grade sound quality with Hi-Res audio certification."],
+      "brand": "SoundMax",
+      "price": 129,
+      "currency": "INR",
+      "in_Stock": false,
+      "rating": 4.8,
+      "images": ["https://png.pngtree.com/png-clipart/20241117/original/pngtree-a-yellow-mens-jacket-illustration-png-image_17119918.png"],
+      "features": ["Bluetooth 5.3", "Hi-Res Audio", "50-hour battery", "Memory Foam Earcups"],
+      "dimensions": {
+        "width": "8.2 in",
+        "height": "9.1 in",
+        "depth": "3.6 in",
+        "weight": "310g"
+      },
+      "warranty": "2 years",
+      "free_Shipping": false,
+      "category": "67fa003c15f3a5c7c1c6e3b8"
+    },
+    {
+      "name": "SoundMax Travel T5",
+      "description": ["Compact foldable design with travel case included."],
+      "brand": "SoundMax",
+      "price": 95,
+      "currency": "INR",
+      "in_Stock": true,
+      "rating": 4.3,
+      "images": ["https://png.pngtree.com/png-clipart/20241117/original/pngtree-a-yellow-mens-jacket-illustration-png-image_17119918.png"],
+      "features": ["Bluetooth 5.2", "Quick Charge", "28-hour battery", "Travel Case"],
+      "dimensions": {
+        "width": "7.0 in",
+        "height": "7.8 in",
+        "depth": "3.0 in",
+        "weight": "230g"
+      },
+      "warranty": "1 year",
+      "free_Shipping": true,
+      "category": "67fa003c15f3a5c7c1c6e3b8"
+    },
+    {
+      "name": "SoundMax Kids K2",
+      "description": ["Child-friendly headphones with volume limiter and colorful design."],
+      "brand": "SoundMax",
+      "price": 65,
+      "currency": "INR",
+      "in_Stock": true,
+      "rating": 4.0,
+      "images": ["https://png.pngtree.com/png-clipart/20241117/original/pngtree-a-yellow-mens-jacket-illustration-png-image_17119918.png"],
+      "features": ["Bluetooth 5.0", "Volume Limiter", "15-hour battery", "Durable Build"],
+      "dimensions": {
+        "width": "6.0 in",
+        "height": "6.5 in",
+        "depth": "2.3 in",
+        "weight": "160g"
+      },
+      "warranty": "1 year",
+      "free_Shipping": false,
+      "category": "67fa003c15f3a5c7c1c6e3b8"
+    },
+    {
+      "name": "SoundMax Bass B7",
+      "description": ["Extra bass headphones for immersive music experience."],
+      "brand": "SoundMax",
+      "price": 79,
+      "currency": "INR",
+      "in_Stock": false,
+      "rating": 4.1,
+      "images": ["https://png.pngtree.com/png-clipart/20241117/original/pngtree-a-yellow-mens-jacket-illustration-png-image_17119918.png"],
+      "features": ["Bluetooth 5.1", "Enhanced Bass", "22-hour battery", "Wired Mode"],
+      "dimensions": {
+        "width": "7.2 in",
+        "height": "8.0 in",
+        "depth": "3.1 in",
+        "weight": "240g"
+      },
+      "warranty": "1 year",
+      "free_Shipping": true,
+      "category": "67fa003c15f3a5c7c1c6e3b8"
+    },
+    {
+      "name": "SoundMax Work W9",
+      "description": ["Optimized for calls with AI-powered voice clarity."],
+      "brand": "SoundMax",
+      "price": 89,
+      "currency": "INR",
+      "in_Stock": true,
+      "rating": 4.4,
+      "images": ["https://png.pngtree.com/png-clipart/20241117/original/pngtree-a-yellow-mens-jacket-illustration-png-image_17119918.png"],
+      "features": ["Bluetooth 5.2", "AI Noise Reduction", "26-hour battery", "Multi-Point Connect"],
+      "dimensions": {
+        "width": "7.4 in",
+        "height": "8.3 in",
+        "depth": "3.1 in",
+        "weight": "255g"
+      },
+      "warranty": "1 year",
+      "free_Shipping": true,
+      "category": "67fa003c15f3a5c7c1c6e3b8"
+    },
+    {
+      "name": "SoundMax Elite E4",
+      "description": ["Luxury headphones with leather earcups and premium finish."],
+      "brand": "SoundMax",
+      "price": 149,
+      "currency": "INR",
+      "in_Stock": true,
+      "rating": 4.9,
+      "images": ["https://png.pngtree.com/png-clipart/20241117/original/pngtree-a-yellow-mens-jacket-illustration-png-image_17119918.png"],
+      "features": ["Bluetooth 5.3", "Active Noise Cancellation", "45-hour battery", "Wireless Charging"],
+      "dimensions": {
+        "width": "8.5 in",
+        "height": "9.3 in",
+        "depth": "3.8 in",
+        "weight": "300g"
+      },
+      "warranty": "3 years",
+      "free_Shipping": true,
+      "category": "67fa003c15f3a5c7c1c6e3b8"
+    }
+  ]
