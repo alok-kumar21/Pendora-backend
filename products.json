@@ -1,0 +1,185 @@
+[
+  {
+    "name": "iPhone 15 Pro",
+    "description": ["Latest Apple smartphone with A17 Pro chip", "Titanium design", "Pro camera system"],
+    "brand": "Apple",
+    "price": 999,
+    "in_Stock": true,
+    "rating": 4.8,
+    "images": ["iphone15pro1.jpg", "iphone15pro2.jpg"],
+    "features": ["6.1-inch Super Retina XDR display", "5G capable", "Face ID"],
+    "dimensions": {
+      "width": "2.82 inches",
+      "height": "5.77 inches",
+      "depth": "0.32 inch",
+      "weight": "6.60 ounces"
+    },
+    "warranty": "1 year limited",
+    "free_Shipping": true,
+    "category": "680e71e4cd9ad19fdf20f765" 
+  },
+  {
+    "name": "Sony WH-1000XM5 Headphones",
+    "description": ["Premium noise-canceling headphones", "30-hour battery life", "Crystal clear hands-free calling"],
+    "brand": "Sony",
+    "price": 399.99,
+    "in_Stock": true,
+    "rating": 4.7,
+    "images": ["sony-headphones1.jpg", "sony-headphones2.jpg"],
+    "features": ["Industry-leading noise cancellation", "Touch controls", "Built-in Alexa"],
+    "dimensions": {
+      "width": "7.99 inches",
+      "height": "2.94 inches",
+      "depth": "10.43 inches",
+      "weight": "8.82 ounces"
+    },
+    "warranty": "2 years manufacturer",
+    "free_Shipping": false,
+    "category": "680e71e4cd9ad19fdf20f765" 
+  },
+  {
+    "name": "Levi's 501 Original Fit Jeans",
+    "description": ["Iconic straight leg jeans", "Button fly", "100% cotton denim"],
+    "brand": "Levi's",
+    "price": 69.50,
+    "in_Stock": true,
+    "rating": 4.4,
+    "images": ["levis1.jpg", "levis2.jpg"],
+    "features": ["Classic five-pocket styling", "Sits at waist", "Rigid denim that softens with wear"],
+    "dimensions": {
+      "weight": "1.5 pounds"
+    },
+    "warranty": "90 days return policy",
+    "free_Shipping": true,
+    "category": "680e7216cd9ad19fdf20f767" 
+  },
+  {
+    "name": "Instant Pot Duo 7-in-1",
+    "description": ["7-in-1 multi-cooker", "Pressure cooker, slow cooker, rice cooker", "Stainless steel pot"],
+    "brand": "Instant Pot",
+    "price": 99.95,
+    "in_Stock": true,
+    "rating": 4.6,
+    "images": ["instantpot1.jpg", "instantpot2.jpg"],
+    "features": ["14 built-in safety mechanisms", "Easy-to-use control panel", "Dishwasher-safe parts"],
+    "dimensions": {
+      "width": "13.2 inches",
+      "height": "12.5 inches",
+      "depth": "12.5 inches",
+      "weight": "11.64 pounds"
+    },
+    "warranty": "1 year limited",
+    "free_Shipping": true,
+    "category": "680e721fcd9ad19fdf20f769" 
+  },
+  {
+    "name": "The Silent Patient Hardcover",
+    "description": ["Psychological thriller novel", "New York Times bestseller", "Alex Michaelides debut"],
+    "brand": "Celadon Books",
+    "price": 18.39,
+    "in_Stock": true,
+    "rating": 4.5,
+    "images": ["silentpatient1.jpg", "silentpatient2.jpg"],
+    "features": ["336 pages", "ISBN-10: 1250301696", "Published February 2019"],
+    "dimensions": {
+      "width": "6.4 inches",
+      "height": "1.2 inches",
+      "depth": "9.6 inches",
+      "weight": "1.2 pounds"
+    },
+    "warranty": "None",
+    "free_Shipping": true,
+    "category": "680e7227cd9ad19fdf20f76b" 
+  },
+  {
+    "name": "YETI Rambler 20 oz Tumbler",
+    "description": ["Vacuum insulated stainless steel tumbler", "Keeps drinks hot or cold for hours", "No Sweat Design"],
+    "brand": "YETI",
+    "price": 34.99,
+    "in_Stock": true,
+    "rating": 4.8,
+    "images": ["yeti1.jpg", "yeti2.jpg"],
+    "features": ["Dishwasher safe", "BPA-free", "Slip-resistant grip"],
+    "dimensions": {
+      "width": "3.5 inches",
+      "height": "7.6 inches",
+      "weight": "14 ounces"
+    },
+    "warranty": "5 years",
+    "free_Shipping": true,
+    "category": "680e7230cd9ad19fdf20f76d" 
+  },
+  {
+    "name": "Dyson Supersonic Hair Dryer",
+    "description": ["Professional hair dryer", "Intelligent heat control", "Fast drying"],
+    "brand": "Dyson",
+    "price": 429.99,
+    "in_Stock": true,
+    "rating": 4.7,
+    "images": ["dyson-hair1.jpg", "dyson-hair2.jpg"],
+    "features": ["4 heat settings", "3 speed settings", "Magnetic attachments"],
+    "dimensions": {
+      "width": "3.8 inches",
+      "height": "9.7 inches",
+      "depth": "3.4 inches",
+      "weight": "1.8 pounds"
+    },
+    "warranty": "2 years limited",
+    "free_Shipping": true,
+    "category": "680e723acd9ad19fdf20f76f" 
+  },
+  {
+    "name": "Settlers of Catan Board Game",
+    "description": ["Classic strategy board game", "3-4 players", "Ages 10+"],
+    "brand": "Catan Studio",
+    "price": 44.99,
+    "in_Stock": true,
+    "rating": 4.8,
+    "images": ["catan1.jpg", "catan2.jpg"],
+    "features": ["60-90 minute play time", "Resource management", "Trading mechanics"],
+    "dimensions": {
+      "width": "11.63 inches",
+      "height": "3 inches",
+      "depth": "11.63 inches",
+      "weight": "2.2 pounds"
+    },
+    "warranty": "90 days",
+    "free_Shipping": true,
+    "category": "680e7243cd9ad19fdf20f771" 
+  },
+  {
+    "name": "WeatherTech FloorLiners",
+    "description": ["Custom-fit vehicle floor protection", "All-weather", "Made in USA"],
+    "brand": "WeatherTech",
+    "price": 199.95,
+    "in_Stock": true,
+    "rating": 4.9,
+    "images": ["weathertech1.jpg", "weathertech2.jpg"],
+    "features": ["Laser-measured", "Non-slip", "Contains spills"],
+    "dimensions": {
+      "weight": "12 pounds (set of 2)"
+    },
+    "warranty": "3 years",
+    "free_Shipping": true,
+    "category": "680e724ccd9ad19fdf20f773"  
+  },
+  {
+    "name": "Fitbit Charge 5",
+    "description": ["Advanced fitness tracker", "Stress management tools", "Built-in GPS"],
+    "brand": "Fitbit",
+    "price": 149.95,
+    "in_Stock": true,
+    "rating": 4.4,
+    "images": ["fitbit1.jpg", "fitbit2.jpg"],
+    "features": ["7-day battery life", "20+ exercise modes", "Sleep tracking"],
+    "dimensions": {
+      "width": "0.9 inches",
+      "height": "1.7 inches",
+      "depth": "0.4 inch",
+      "weight": "1.1 ounces"
+    },
+    "warranty": "1 year limited",
+    "free_Shipping": true,
+    "category": "680e7255cd9ad19fdf20f775" 
+  }
+]

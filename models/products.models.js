@@ -59,7 +59,11 @@ const productSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
-    category: [{ type: mongoose.Schema.Types.ObjectId, ref: "Categories" }],
+    category: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Categories",
+      require: true,
+    },
   },
   {
     timestamps: true,

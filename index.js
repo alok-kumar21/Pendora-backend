@@ -1,7 +1,9 @@
 const { inilizeData } = require("./db/db.connect");
 inilizeData();
+
 const Products = require("./models/products.models");
 const Categories = require("./models/category.models");
+const Cart = require("./models/cart.models");
 
 const cors = require("cors");
 const express = require("express");
@@ -44,7 +46,8 @@ app.post("/products", async (req, res) => {
 // show all Product
 async function showAllProducts() {
   try {
-    const Product = await Products.find();
+    const Product = await Products.find().populate("category");
+
     return Product;
   } catch (error) {
     console.log("error:", error);
@@ -68,7 +71,7 @@ app.get("/api/products", async (req, res) => {
 
 async function showProductsById(productId) {
   try {
-    const product = await Products.findById(productId);
+    const product = await Products.findById(productId).populate("category");
     return product;
   } catch (error) {
     console.log("Error:", error);
@@ -143,7 +146,9 @@ app.get("/api/categories", async (req, res) => {
 // This APi call gets category by categoryId from the DB
 async function showProductCategoryById(categoryId) {
   try {
-    const productIdCategory = await Products.find({ _id: categoryId });
+    const productIdCategory = await Products.find({ _id: categoryId }).populate(
+      "category"
+    );
     return productIdCategory;
   } catch (error) {
     console.log("Error:", error);
@@ -163,34 +168,72 @@ app.get("/api/categories/:categoryId", async (req, res) => {
   }
 });
 
-// add item to cart
+// add to cart route
 
-// async function addItemCart(cartId) {
-//   try {
-//     const cartItem = Products.findById(cartId);
+async function addToCart(item) {
+  try {
+    const product = Cart(item);
+    const addProduct = await product.save();
+    return addProduct;
+  } catch (error) {
+    console.log("Error:", error);
+  }
+}
 
-//     const savingProduct = Cart(cartItem);
+app.post("/api/addcart", async (req, res) => {
+  try {
+    const product = await addToCart(req.body);
+    if (product) {
+      res.status(200).json({ message: "Cart Add Successfully." });
+    }
+  } catch (error) {
+    res.status(404).json({ error: "failed to add cart data" });
+  }
+});
 
-//     const savedItem = await savingProduct.save();
-//     return savedItem;
-//   } catch (error) {
-//     console.log("Error:", error);
-//   }
-// }
+// get all cart item
 
-// app.post("/api/cart", async (req, res) => {
-//   try {
-//     const { item } = addItemCart(req.body);
-//     Cart.push(item);
-//     res.json(Cart);
+async function getAllCartItem() {
+  try {
+    const product = await Cart.find().populate("product");
 
-//     if (item) {
-//       res.status(200).json({ message: "Product save Successfully" });
-//     }
-//   } catch (error) {
-//     console.log("Error", error);
-//   }
-// });
+    return product;
+  } catch (error) {
+    console.log("Error:", error);
+  }
+}
+
+app.get("/api/cart", async (req, res) => {
+  try {
+    const cartItem = await getAllCartItem();
+    if (cartItem) {
+      res.json(cartItem);
+    }
+  } catch (error) {
+    res.status(404).json(error);
+  }
+});
+
+// Delete cart item
+async function deleteFromCart(productId) {
+  try {
+    const item = await Cart.findByIdAndDelete(productId);
+    return item;
+  } catch (error) {
+    console.log("Error:", error);
+  }
+}
+
+app.delete("/api/cart/remove/:productId", async (req, res) => {
+  try {
+    const deletedProduct = await deleteFromCart(req.params.productId);
+    if (deletedProduct) {
+      res.status(200).json({ message: "Data deleted successfully." });
+    }
+  } catch (error) {
+    res.status(404).json({ error: error });
+  }
+});
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
