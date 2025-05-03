@@ -21,6 +21,14 @@ const productSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
+    discount: {
+      type:Number,
+      require: true,
+    },
+    deliveryCharge: {
+      type: Boolean,
+      require: true,
+    },
     currency: {
       type: String,
       default: "USD",

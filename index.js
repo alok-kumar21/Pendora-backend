@@ -4,6 +4,7 @@ inilizeData();
 const Products = require("./models/products.models");
 const Categories = require("./models/category.models");
 const Cart = require("./models/cart.models");
+const Wishlist = require("./models/wishlist.models");
 
 const cors = require("cors");
 const express = require("express");
@@ -206,6 +207,7 @@ async function getAllCartItem() {
 app.get("/api/cart", async (req, res) => {
   try {
     const cartItem = await getAllCartItem();
+
     if (cartItem) {
       res.json(cartItem);
     }
@@ -232,6 +234,49 @@ app.delete("/api/cart/remove/:productId", async (req, res) => {
     }
   } catch (error) {
     res.status(404).json({ error: error });
+  }
+});
+
+// add to wishlist
+
+async function addToWishlist(wproduct) {
+  try {
+    const wishlistItem = Wishlist(wproduct);
+    const saveItem = await wishlistItem.save();
+    return saveItem;
+  } catch (error) {
+    console.log("Error:", error);
+  }
+}
+app.post("/api/wishlist", async (req, res) => {
+  try {
+    const wishitem = await addToWishlist(req.body);
+    if (wishitem) {
+      res.status(200).json({ message: "wishlist added the item" });
+    }
+  } catch (error) {
+    console.log("Error:", error);
+  }
+});
+
+// get all wishlist item
+async function showAllWishlist() {
+  try {
+    const allWishlist = await Wishlist.find().populate("product");
+    return allWishlist;
+  } catch (error) {
+    console.log("Error:", error);
+  }
+}
+
+app.get("/api/wishlist", async (req, res) => {
+  try {
+    const showWishlist = await showAllWishlist();
+    if (showWishlist) {
+      res.json(showWishlist);
+    }
+  } catch (error) {
+    console.log("Error:", error);
   }
 });
 
