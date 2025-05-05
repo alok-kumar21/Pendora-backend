@@ -5,6 +5,7 @@ const Products = require("./models/products.models");
 const Categories = require("./models/category.models");
 const Cart = require("./models/cart.models");
 const Wishlist = require("./models/wishlist.models");
+const Address = require("./models/address.model")
 
 const cors = require("cors");
 const express = require("express");
@@ -237,6 +238,31 @@ app.delete("/api/cart/remove/:productId", async (req, res) => {
   }
 });
 
+//  update cart Quantity
+
+async function updateQuantity(productId,product){
+  try{
+  
+    const item = await Cart.findByIdAndUpdate(productId,product,{new:true})
+  return item
+  }catch(error){
+    console.log("Error:",error)
+  }
+}
+
+app.post("/api/cart/update/:cartItemId",async(req,res)=>{
+  try{
+    const product = await updateQuantity(req.params.cartItemId,req.body)
+    if(product){
+      res.status(200).json({message:"quantity updated successfully."})
+    }
+
+  }catch(error)
+  {
+    console.log("Error:",error)
+  }
+})
+
 // add to wishlist
 
 async function addToWishlist(wproduct) {
@@ -279,6 +305,135 @@ app.get("/api/wishlist", async (req, res) => {
     console.log("Error:", error);
   }
 });
+
+
+//  wishlist remove item
+async function removeFromWishlist(productId){
+  try{
+    const deletedData = await Wishlist.findByIdAndDelete(productId)
+    return deletedData
+
+  }catch(error){
+    console.log("Error:",error)
+  }
+}
+
+app.delete("/api/wishlist/remove/:wishlistId",async (req,res)=>{
+  try{
+    const dProduct = await removeFromWishlist(req.params.wishlistId)
+    if(dProduct){
+      res.status(200).json({message:"Product Deleted Successfully."})
+    }
+
+  }catch(error){
+    console.log("Error:",error)
+  }
+})
+
+//  address Management 
+
+//  add address
+
+async function addAddress(addaddress){
+  try{
+    const address = Address(addaddress)
+    const saveAddress = await address.save()
+    return saveAddress
+
+  }catch(error){
+    console.log("Error:",error)
+  }
+}
+
+app.post("/api/v1/address",async (req,res)=>{
+  try{
+    const Address = addAddress(req.body)
+    if(Address){
+      res.status(200).json({message:"Addresss Save Successfully."})
+    }
+
+  }catch(error){
+    console.log("Error:",error)
+  }
+})
+
+// get all addresses
+
+async function showAllAddress(){
+  try{
+    const allAddress = await Address.find()
+    return allAddress
+
+  }catch(error)
+  {
+    console.log("Error:",error)
+  }
+}
+
+app.get("/api/v2/address",async (req,res)=>{
+  try{
+    const showAddress = await showAllAddress()
+    if(!showAddress){
+res.status(404).json({error:"address not found."})
+    }{
+      res.json(showAddress)
+    }
+
+  }catch(error){
+    console.log("Error:",error)
+
+  }
+
+})
+
+// update address
+async function updateAddressDetails(addressId,newAddress){
+  try{
+   
+    const updateAddress = await Address.findByIdAndUpdate(addressId,newAddress,{new:true})
+    return updateAddress
+
+  }catch(error){
+    console.log("Error:",error)
+  }
+}
+
+app.post("/api/v3/address/:addressId",async(req,res)=>{
+  try{
+    const newAddress = await updateAddressDetails(req.params.addressId,req.body)
+    if(newAddress){
+      res.status(200).json({message:"Address updated successfully"})
+    }
+
+  }catch(error){
+    console.log("Error:",error)
+  }
+})
+
+//  api for deleting address
+
+async function addressDelete(addressId){
+  try{
+    const deleteAddress = await Address.findByIdAndDelete(addressId)
+    return deleteAddress
+
+  }catch(error){
+    console.log("Error:",error)
+
+  }
+}
+
+app.delete("/api/v3/address/:addressId",async(req,res)=>{
+  try{
+    const deleteAddress = await addressDelete(req.params.addressId)
+    if(deleteAddress){
+      res.status(200).json({message:"address deleted successfully."})
+    }
+
+  }catch(error){
+    console.log("Error:",error)
+  }
+})
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
