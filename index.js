@@ -93,6 +93,30 @@ app.get("/api/products/:productId", async (req, res) => {
   }
 });
 
+// API get product by title
+async function showProductByTitle(productName) {
+  try {
+    const item = await Products.find({ name: productName });
+
+    return item;
+  } catch (error) {
+    console.log("Error:", error);
+  }
+}
+
+app.get("/v1/product/search/:producttitle", async (req, res) => {
+  try {
+    const product = await showProductByTitle(req.params.producttitle);
+    if (product) {
+      res.json(product);
+    } else {
+      res.status(500).json({ error: "Product not Found!" });
+    }
+  } catch (error) {
+    console.log("Error:", error);
+  }
+});
+
 //This API call POst all category data to Db
 
 async function addCategory(category) {
