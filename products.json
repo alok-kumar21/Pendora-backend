@@ -1,205 +1,154 @@
 [
   {
-    "name": "iPhone 15 Pro",
-    "description": ["Latest Apple smartphone with A17 Pro chip", "Titanium design", "Pro camera system"],
-    "brand": "Apple",
-    "price": 999,
-    "discount":20,
-    "deliveryCharge":true,
-    "in_Stock": true,
-    "rating": 4.8,
-    "images": ["https://theinextstore.com/uploads/products/iphone-15-pro-1.jpg", "iphone15pro2.jpg"],
-    "features": ["6.1-inch Super Retina XDR display", "5G capable", "Face ID"],
-    "dimensions": {
-      "width": "2.82 inches",
-      "height": "5.77 inches",
-      "depth": "0.32 inch",
-      "weight": "6.60 ounces"
-    },
-    "warranty": "1 year limited",
-    "free_Shipping": true,
-    "category": "680e71e4cd9ad19fdf20f765" 
-  },
-  {
-    "name": "Sony WH-1000XM5 Headphones",
-    "description": ["Premium noise-canceling headphones", "30-hour battery life", "Crystal clear hands-free calling"],
-    "brand": "Sony",
-    "price": 399.99,
-    "discount":20,
-    "deliveryCharge":true,
-    "in_Stock": true,
-    "rating": 4.7,
-    "images": ["https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1682757035/Croma%20Assets/Entertainment/Headphones%20and%20Earphones/Images/272419_jqvb9x.png?tr=w-600", "sony-headphones2.jpg"],
-    "features": ["Industry-leading noise cancellation", "Touch controls", "Built-in Alexa"],
-    "dimensions": {
-      "width": "7.99 inches",
-      "height": "2.94 inches",
-      "depth": "10.43 inches",
-      "weight": "8.82 ounces"
-    },
-    "warranty": "2 years manufacturer",
-    "free_Shipping": false,
-    "category": "680e71e4cd9ad19fdf20f765" 
-  },
-  {
-    "name": "Levi's 501 Original Fit Jeans",
-    "description": ["Iconic straight leg jeans", "Button fly", "100% cotton denim"],
+    "name": "Classic Denim Jeans",
+    "description": [
+      "High-quality denim material",
+      "Slim fit design",
+      "Five-pocket style"
+    ],
     "brand": "Levi's",
-    "price": 69.50,
-    "discount":10,
-    "deliveryCharge":false,
-    "in_Stock": true,
-    "rating": 4.4,
-    "images": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn3vhi8WhXj-ciXLzJC2k_kzTtvEXsh8F0jw&s", "levis2.jpg"],
-    "features": ["Classic five-pocket styling", "Sits at waist", "Rigid denim that softens with wear"],
-    "dimensions": {
-      "weight": "1.5 pounds"
-    },
-    "warranty": "90 days return policy",
-    "free_Shipping": true,
-    "category": "680e7216cd9ad19fdf20f767" 
-  },
-  {
-    "name": "Instant Pot Duo 7-in-1",
-    "description": ["7-in-1 multi-cooker", "Pressure cooker, slow cooker, rice cooker", "Stainless steel pot"],
-    "brand": "Instant Pot",
-    "price": 99.95,
-    "discount":10,
-    "deliveryCharge":false,
-    "in_Stock": true,
-    "rating": 4.6,
-    "images": ["https://m.media-amazon.com/images/I/81ZL2Xla04L.jpg", "instantpot2.jpg"],
-    "features": ["14 built-in safety mechanisms", "Easy-to-use control panel", "Dishwasher-safe parts"],
-    "dimensions": {
-      "width": "13.2 inches",
-      "height": "12.5 inches",
-      "depth": "12.5 inches",
-      "weight": "11.64 pounds"
-    },
-    "warranty": "1 year limited",
-    "free_Shipping": true,
-    "category": "680e721fcd9ad19fdf20f769" 
-  },
-  {
-    "name": "The Silent Patient Hardcover",
-    "description": ["Psychological thriller novel", "New York Times bestseller", "Alex Michaelides debut"],
-    "brand": "Celadon Books",
-    "price": 18.39,
-    "discount":10,
-    "deliveryCharge":false,
+    "price": 59.99,
+    "discount": 10,
+    "deliveryCharge": true,
+    "currency": "USD",
     "in_Stock": true,
     "rating": 4.5,
-    "images": ["https://images.pangobooks.com/images/5842f2f2-a8f7-41b5-9799-d409911f6f7a?width=800&quality=85&crop=1%3A1", "silentpatient2.jpg"],
-    "features": ["336 pages", "ISBN-10: 1250301696", "Published February 2019"],
+    "images": [
+      "https://u-mercari-images.mercdn.net/photos/m11631522850_2.jpg",
+      "https://example.com/jeans2.jpg"
+    ],
+    "features": ["Stretchable fabric", "Button fly", "Machine washable"],
     "dimensions": {
-      "width": "6.4 inches",
-      "height": "1.2 inches",
-      "depth": "9.6 inches",
-      "weight": "1.2 pounds"
+      "width": "16 inches",
+      "height": "40 inches",
+      "depth": "0.5 inches",
+      "weight": "1.2 lbs"
     },
-    "warranty": "None",
-    "free_Shipping": true,
-    "category": "680e7227cd9ad19fdf20f76b" 
+    "warranty": "1 year against manufacturing defects",
+    "free_Shipping": false,
+    "category": "60d5ec9a8f8a9b2a7c3e4f5a"
   },
   {
-    "name": "YETI Rambler 20 oz Tumbler",
-    "description": ["Vacuum insulated stainless steel tumbler", "Keeps drinks hot or cold for hours", "No Sweat Design"],
-    "brand": "YETI",
-    "price": 34.99,
-    "discount":10,
-    "deliveryCharge":false,
+    "name": "Leather Dress Shoes",
+    "description": [
+      "Premium genuine leather",
+      "Cushioned insole",
+      "Slip-resistant sole"
+    ],
+    "brand": "Clarks",
+    "price": 129.99,
+    "discount": 15,
+    "deliveryCharge": false,
+    "currency": "USD",
     "in_Stock": true,
     "rating": 4.8,
-    "images": ["https://yeti-webmedia.imgix.net/m/16110c1aa35bbd25/original/Rambler_tumbler_magslider_lid_20oz_drinkware_navy_mobile.png?auto=format", "yeti2.jpg"],
-    "features": ["Dishwasher safe", "BPA-free", "Slip-resistant grip"],
+    "images": [
+      "https://assets.ajio.com/medias/sys_master/root/h94/h0d/16675242999838/-1117Wx1400H-450137697-drktan-MODEL.jpg",
+      "https://example.com/shoes2.jpg"
+    ],
+    "features": [
+      "Oxford style",
+      "Goodyear welt construction",
+      "Breathable lining"
+    ],
     "dimensions": {
-      "width": "3.5 inches",
-      "height": "7.6 inches",
-      "weight": "14 ounces"
+      "width": "4 inches",
+      "height": "5 inches",
+      "depth": "11 inches",
+      "weight": "2.3 lbs"
     },
-    "warranty": "5 years",
+    "warranty": "2 years against material defects",
     "free_Shipping": true,
-    "category": "680e7230cd9ad19fdf20f76d" 
+    "category": "60d5ec9a8f8a9b2a7c3e4f5a"
   },
   {
-    "name": "Dyson Supersonic Hair Dryer",
-    "description": ["Professional hair dryer", "Intelligent heat control", "Fast drying"],
-    "brand": "Dyson",
-    "price": 429.99,
-    "discount":20,
-    "deliveryCharge":true,
+    "name": "Sports T-Shirt",
+    "description": [
+      "Moisture-wicking fabric",
+      "Breathable mesh panels",
+      "Regular fit"
+    ],
+    "brand": "Nike",
+    "price": 29.99,
+    "discount": 5,
+    "deliveryCharge": true,
+    "currency": "USD",
+    "in_Stock": true,
+    "rating": 4.2,
+    "images": [
+      "https://wayupsports.com/cdn/shop/files/DZ2751-010.jpg?v=1743074595"
+    ],
+    "features": ["Dri-FIT technology", "Raglan sleeves", "Machine washable"],
+    "dimensions": {
+      "width": "18 inches",
+      "height": "26 inches",
+      "depth": "0.2 inches",
+      "weight": "0.4 lbs"
+    },
+    "warranty": "6 months",
+    "free_Shipping": false,
+    "category": "60d5ec9a8f8a9b2a7c3e4f5a"
+  },
+  {
+    "name": "Winter Jacket",
+    "description": [
+      "Water-resistant outer shell",
+      "Insulated with synthetic fill",
+      "Adjustable hood"
+    ],
+    "brand": "The North Face",
+    "price": 199.99,
+    "discount": 25,
+    "deliveryCharge": false,
+    "currency": "USD",
     "in_Stock": true,
     "rating": 4.7,
-    "images": ["https://images-cdn.ubuy.co.in/65fe8683608ee06ba94d498f-dyson-supersonic-hair-dryer.jpg", "dyson-hair2.jpg"],
-    "features": ["4 heat settings", "3 speed settings", "Magnetic attachments"],
+    "images": [
+      "https://media.karousell.com/media/photos/products/2023/12/11/xsxxxl_the_north_face_tnf_wome_1702309978_792e5860_progressive",
+      "https://example.com/jacket2.jpg"
+    ],
+    "features": ["Windproof", "Multiple pockets", "Adjustable cuffs"],
     "dimensions": {
-      "width": "3.8 inches",
-      "height": "9.7 inches",
-      "depth": "3.4 inches",
-      "weight": "1.8 pounds"
+      "width": "22 inches",
+      "height": "28 inches",
+      "depth": "4 inches",
+      "weight": "3.5 lbs"
     },
-    "warranty": "2 years limited",
+    "warranty": "2 years",
     "free_Shipping": true,
-    "category": "680e723acd9ad19fdf20f76f" 
+    "category": "60d5ec9a8f8a9b2a7c3e4f5a"
   },
   {
-    "name": "Settlers of Catan Board Game",
-    "description": ["Classic strategy board game", "3-4 players", "Ages 10+"],
-    "brand": "Catan Studio",
-    "price": 44.99,
-    "discount":10,
-    "deliveryCharge":false,
-    "in_Stock": true,
-    "rating": 4.8,
-    "images": ["https://media.npr.org/assets/img/2024/04/19/new-energies-board-layout_sq-b9f9503a0d30dca53c8c0dd8705dafae843a402f.jpg?s=1100&c=50&f=jpeg", "catan2.jpg"],
-    "features": ["60-90 minute play time", "Resource management", "Trading mechanics"],
-    "dimensions": {
-      "width": "11.63 inches",
-      "height": "3 inches",
-      "depth": "11.63 inches",
-      "weight": "2.2 pounds"
-    },
-    "warranty": "90 days",
-    "free_Shipping": true,
-    "category": "680e7243cd9ad19fdf20f771" 
-  },
-  {
-    "name": "WeatherTech FloorLiners",
-    "description": ["Custom-fit vehicle floor protection", "All-weather", "Made in USA"],
-    "brand": "WeatherTech",
-    "price": 199.95,
-    "discount":20,
-    "deliveryCharge":true,
-    "in_Stock": true,
-    "rating": 4.9,
-    "images": ["https://rallitek.com/cdn/shop/products/28880.jpg?v=1671537420", "weathertech2.jpg"],
-    "features": ["Laser-measured", "Non-slip", "Contains spills"],
-    "dimensions": {
-      "weight": "12 pounds (set of 2)"
-    },
-    "warranty": "3 years",
-    "free_Shipping": true,
-    "category": "680e724ccd9ad19fdf20f773"  
-  },
-  {
-    "name": "Fitbit Charge 5",
-    "description": ["Advanced fitness tracker", "Stress management tools", "Built-in GPS"],
-    "brand": "Fitbit",
-    "price": 149.95,
-    "discount":20,
-    "deliveryCharge":true,
+    "name": "Casual Sneakers",
+    "description": [
+      "Lightweight and comfortable",
+      "Rubber outsole for traction",
+      "Lace-up closure"
+    ],
+    "brand": "Adidas",
+    "price": 79.99,
+    "discount": 20,
+    "deliveryCharge": true,
+    "currency": "USD",
     "in_Stock": true,
     "rating": 4.4,
-    "images": ["fitbit1.jpg", "fitbit2.jpg"],
-    "features": ["7-day battery life", "20+ exercise modes", "Sleep tracking"],
+    "images": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWnWDWmJQyprLEjoX0TuqA46G5MDGAP4IttQ&s",
+      "https://example.com/sneakers2.jpg"
+    ],
+    "features": [
+      "Breathable mesh upper",
+      "Cloudfoam midsole",
+      "Flexible design"
+    ],
     "dimensions": {
-      "width": "0.9 inches",
-      "height": "1.7 inches",
-      "depth": "0.4 inch",
-      "weight": "1.1 ounces"
+      "width": "6 inches",
+      "height": "4 inches",
+      "depth": "10 inches",
+      "weight": "1.8 lbs"
     },
-    "warranty": "1 year limited",
-    "free_Shipping": true,
-    "category": "680e7255cd9ad19fdf20f775" 
+    "warranty": "1 year",
+    "free_Shipping": false,
+    "category": "60d5ec9a8f8a9b2a7c3e4f5a"
   }
 ]

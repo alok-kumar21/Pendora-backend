@@ -56,7 +56,7 @@ async function showAllProducts() {
   }
 }
 
-app.get("/api/products", async (req, res) => {
+app.get("/v1/products", async (req, res) => {
   try {
     const product = await showAllProducts();
     if (product) {
@@ -80,7 +80,7 @@ async function showProductsById(productId) {
   }
 }
 
-app.get("/api/products/:productId", async (req, res) => {
+app.get("/v1/products/:productId", async (req, res) => {
   try {
     const productById = await showProductsById(req.params.productId);
     if (productById) {
@@ -155,7 +155,7 @@ async function showProductByCategory() {
   }
 }
 
-app.get("/api/categories", async (req, res) => {
+app.get("/v1/categories", async (req, res) => {
   try {
     const productCategory = await showProductByCategory();
 
@@ -172,16 +172,16 @@ app.get("/api/categories", async (req, res) => {
 // This APi call gets category by categoryId from the DB
 async function showProductCategoryById(categoryId) {
   try {
-    const productIdCategory = await Products.find({ _id: categoryId }).populate(
-      "category"
-    );
+    const productIdCategory = await Products.find({
+      category: categoryId,
+    }).populate("category");
     return productIdCategory;
   } catch (error) {
     console.log("Error:", error);
   }
 }
 
-app.get("/api/categories/:categoryId", async (req, res) => {
+app.get("/v2/categories/:categoryId", async (req, res) => {
   try {
     const categoryId = await showProductCategoryById(req.params.categoryId);
     if (categoryId) {
@@ -206,7 +206,7 @@ async function addToCart(item) {
   }
 }
 
-app.post("/api/addcart", async (req, res) => {
+app.post("/v1/addcart", async (req, res) => {
   try {
     const product = await addToCart(req.body);
     if (product) {
@@ -229,7 +229,7 @@ async function getAllCartItem() {
   }
 }
 
-app.get("/api/cart", async (req, res) => {
+app.get("/v1/cart", async (req, res) => {
   try {
     const cartItem = await getAllCartItem();
 
@@ -251,7 +251,7 @@ async function deleteFromCart(productId) {
   }
 }
 
-app.delete("/api/cart/remove/:productId", async (req, res) => {
+app.delete("/v1/cart/remove/:productId", async (req, res) => {
   try {
     const deletedProduct = await deleteFromCart(req.params.productId);
     if (deletedProduct) {
@@ -275,7 +275,7 @@ async function updateQuantity(productId, product) {
   }
 }
 
-app.post("/api/cart/update/:cartItemId", async (req, res) => {
+app.post("/v1/cart/update/:cartItemId", async (req, res) => {
   try {
     const product = await updateQuantity(req.params.cartItemId, req.body);
     if (product) {
@@ -297,7 +297,7 @@ async function addToWishlist(wproduct) {
     console.log("Error:", error);
   }
 }
-app.post("/api/wishlist", async (req, res) => {
+app.post("/v1/wishlist", async (req, res) => {
   try {
     const wishitem = await addToWishlist(req.body);
     if (wishitem) {
@@ -318,7 +318,7 @@ async function showAllWishlist() {
   }
 }
 
-app.get("/api/wishlist", async (req, res) => {
+app.get("/v2/wishlist", async (req, res) => {
   try {
     const showWishlist = await showAllWishlist();
     if (showWishlist) {
@@ -339,7 +339,7 @@ async function removeFromWishlist(productId) {
   }
 }
 
-app.delete("/api/wishlist/remove/:wishlistId", async (req, res) => {
+app.delete("/v1/wishlist/remove/:wishlistId", async (req, res) => {
   try {
     const dProduct = await removeFromWishlist(req.params.wishlistId);
     if (dProduct) {
@@ -364,7 +364,7 @@ async function addAddress(addaddress) {
   }
 }
 
-app.post("/api/v1/address", async (req, res) => {
+app.post("/v1/address", async (req, res) => {
   try {
     const Address = addAddress(req.body);
     if (Address) {
@@ -386,7 +386,7 @@ async function showAllAddress() {
   }
 }
 
-app.get("/api/v2/address", async (req, res) => {
+app.get("/v2/address", async (req, res) => {
   try {
     const showAddress = await showAllAddress();
     if (!showAddress) {
@@ -414,7 +414,7 @@ async function updateAddressDetails(addressId, newAddress) {
   }
 }
 
-app.post("/api/v3/address/:addressId", async (req, res) => {
+app.post("/v3/address/:addressId", async (req, res) => {
   try {
     const newAddress = await updateAddressDetails(
       req.params.addressId,
@@ -439,7 +439,7 @@ async function addressDelete(addressId) {
   }
 }
 
-app.delete("/api/v3/address/:addressId", async (req, res) => {
+app.delete("/v3/address/:addressId", async (req, res) => {
   try {
     const deleteAddress = await addressDelete(req.params.addressId);
     if (deleteAddress) {
